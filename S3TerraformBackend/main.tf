@@ -9,7 +9,3 @@ terraform {
 resource "time_static" "current_time" {
 
 }
-
-output "time" {
-  value = time_static.current_time.id
-}
