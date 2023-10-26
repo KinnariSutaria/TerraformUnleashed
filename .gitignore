@@ -1,2 +1,4 @@
 .idea
 *.terraform.*
+.talismanrc
+*terraform.tfstate
