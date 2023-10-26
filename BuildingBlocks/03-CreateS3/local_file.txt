@@ -1,0 +1,4 @@
+Welcome to the Terraform Unleashed Workshop!!
+Congratulations on deploying your first local file.
+
+Happy Learning!!
