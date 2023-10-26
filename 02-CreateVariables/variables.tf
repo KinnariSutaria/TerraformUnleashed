@@ -45,8 +45,8 @@ variable "my_list" {
 variable "my_map" {
   type    = map(string)
   default = {
-    key1 = "value1"
-    key2 = "value2"
+    filename = "file_from_map_variable.txt"
+    content = "This is a file created from map variable."
     key3 = "value3"
   }
 }

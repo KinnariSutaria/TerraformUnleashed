@@ -11,7 +11,8 @@ resource "aws_s3_bucket" "example_bucket" {
   }
 }
 
-resource "aws_s3_object" "object" {
+resource "aws_s3_object" "example_object" {
+  depends_on = [aws_s3_bucket.example_bucket]
   bucket = "my-first-terraform-bucket-3299"
   key    = "myfirstfile"
   source = "sample.txt"
