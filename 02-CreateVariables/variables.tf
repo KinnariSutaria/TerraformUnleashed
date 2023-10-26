@@ -1,22 +1,3 @@
-variable "file_name" {
-  type = string
-  default = "example.txt"
-}
-
-variable "content_of_file" {
-  type = string
-  default = "Congratulations! You just created your first localfile using variables"
-}
-
-variable "file_using_map_var" {
-  type = map
-  default = {
-    filename = "file-using-map"
-    content  = "This is a file created from map variable"
-  }
-}
-#Access the map variable as filename = var.jedi["filename"]
-
 # String variable
 variable "my_string" {
   type    = string
@@ -26,7 +7,7 @@ variable "my_string" {
 # Number variable
 variable "my_number" {
   type    = number
-  default = 42
+  default = 18
 }
 
 # Boolean variable
@@ -38,7 +19,7 @@ variable "my_boolean" {
 # List variable (list of strings)
 variable "my_list" {
   type    = list(string)
-  default = ["item1", "item2", "item3"]
+  default = ["ec2", "s3", "dynamo_db"]
 }
 
 # Map variable (key-value pairs)
