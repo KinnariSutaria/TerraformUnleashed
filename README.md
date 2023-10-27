@@ -41,3 +41,26 @@ terraform fmt: Reformat your configuration files to follow Terraform best practi
 terraform fmt
 ```
 ## Running a Terraform Configuration
+
+1. **Create a Configuration File**: Write a Terraform configuration file with a `.tf` extension. This file describes the infrastructure you want to create.
+
+2. **Initialize the Project**: In the directory containing your configuration file, run `terraform init`. This command initializes your working directory and downloads any necessary providers.
+
+3. **Generate an Execution Plan**: Run `terraform plan` to create a detailed plan of the changes Terraform will make to your infrastructure.
+
+4. **Apply Changes**: Execute `terraform apply` to apply the changes described in the execution plan. Confirm the changes when prompted.
+
+5. **View Your Infrastructure**: After applying the changes, Terraform provides information about your infrastructure and resources created. You can also access your cloud provider's console to verify the infrastructure.
+
+6. **Destroy Resources (Optional)**: If you want to remove the created infrastructure, use `terraform destroy`. Exercise caution, as this action can be irreversible.
+
+## Additional Resources
+
+- [Terraform Documentation](https://www.terraform.io/docs/index.html): Explore the official Terraform documentation for more in-depth information.
+- [Terraform Registry](https://registry.terraform.io/): Find pre-built modules and configurations for various cloud providers and services.
+
+Happy Terraforming!
+
+## For getting programmatic access to AWS follow the steps given below
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
+
