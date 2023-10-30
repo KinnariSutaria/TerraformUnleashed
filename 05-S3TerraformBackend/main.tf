@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = var.backend_bucket
-    key    = var.backend_bucket_key
-    region = var.region
+    bucket = "my-first-terraform-bucket-3299"
+    key    = "storetfstate"
+    region = "us-east-1"
   }
 }
 

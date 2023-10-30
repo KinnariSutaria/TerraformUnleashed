@@ -4,16 +4,16 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example_bucket" {
-  bucket = "my-first-terraform-bucket-3299"  # Choose a globally unique name for your bucket
+  bucket = "my-first-terraform-qwerty"  # Choose a globally unique name for your bucket
 
   tags = {
-    Name = "my-first-terraform-bucket-3299"
+    Name = "my-first-terraform-qwerty"
   }
 }
 
 resource "aws_s3_object" "example_object" {
   depends_on = [aws_s3_bucket.example_bucket]
-  bucket = "my-first-terraform-bucket-3299"
+  bucket = "my-first-terraform-qwerty"
   key    = "myfirstfile"
   source = "sample.txt"
 }
